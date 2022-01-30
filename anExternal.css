@@ -1,0 +1,83 @@
+/* external style sheet */
+#p_1 {      /* 1st font text */
+    font-size: 20px;
+}
+
+#p_2 {      /* 2nd font text */
+    font-size: 10px;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
+
+h3{
+    font-family: arial;
+    text-align: center;
+    font-size: 20px;
+    color: gold;
+    border: dotted 5px gold;    /* dotted border */
+}
+
+#h_g {
+    color: green;
+}
+
+#h_b {
+    color: red;
+}
+
+#h_t {
+    color:blue;
+}
+
+#pic {      /* picture resize 50x50 */
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border: 5px;
+    padding: 10px;
+    position: relative; /* 1st additional command */
+    animation: mymove 5s infinite; /* 2nd additional command */
+    transform: rotate(20deg); /* 3rd additional command */
+}
+
+#pic3 {     /* rounded border corners */
+        border-radius: 20px; 
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color:white;
+    margin: 20px; /* 20px margin */
+    font-size: 10px;
+}
+
+.centered {     /* text centered on a photo*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fl {       /* floated element */
+    float: left; 
+}
+
+.intro {
+    font-family: arial;
+    font-size: 20px;
+    align-content: center;
+}
+
+@keyframes mymove {   /* 4th additional command */
+    from {left: -100%;} 
+    to {left: 100%;} 
+}
